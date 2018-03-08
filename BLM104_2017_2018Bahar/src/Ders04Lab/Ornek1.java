@@ -254,7 +254,7 @@ public class Ornek1 extends javax.swing.JFrame {
         // TODO add your handling code here:
         String s="";
         for (int i = 0; i < dtmHasta.getRowCount(); i++) {
-            if (((Doktor) cbDoktor.getSelectedItem()).ucret > Integer.parseInt((String)(dtmHasta.getValueAt(i, 4)))){
+            if (dtmHasta.getValueAt(i, 4)!=null && ((Doktor) cbDoktor.getSelectedItem()).ucret > Integer.parseInt((String)(dtmHasta.getValueAt(i, 4)))){
                 s+=" "+(String)(dtmHasta.getValueAt(i, 1)+" "+(String)(dtmHasta.getValueAt(i, 2)));
             }
         }
