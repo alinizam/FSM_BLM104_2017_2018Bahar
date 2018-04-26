@@ -3,6 +3,8 @@
   <persistence-unit name="BLM104_2017_2018BaharPU" transaction-type="RESOURCE_LOCAL">
     <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
     <class>Ders10.Personel</class>
+    <class>Ders11.Ornek1.Memur</class>
+    <class>Ders11.Ornek1.DiscountCode</class>
     <properties>
       <property name="javax.persistence.jdbc.url" value="jdbc:derby://localhost:1527/sample"/>
       <property name="javax.persistence.jdbc.user" value="app"/>
