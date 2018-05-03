@@ -28,7 +28,8 @@ import javax.xml.bind.annotation.XmlRootElement;
     @NamedQuery(name = "Personel.findByAdi", query = "SELECT p FROM Personel p WHERE p.adi = :adi"),
     @NamedQuery(name = "Personel.findBySoyadi", query = "SELECT p FROM Personel p WHERE p.soyadi = :soyadi"),
     @NamedQuery(name = "Personel.findByMaas", query = "SELECT p FROM Personel p WHERE p.maas = :maas"),
-    @NamedQuery(name = "Personel.findByUnvanno", query = "SELECT p FROM Personel p WHERE p.unvanno = :unvanno")})
+    @NamedQuery(name = "Personel.findByUnvanno", query = "SELECT p FROM Personel p WHERE p.unvanno = :unvanno"),
+    @NamedQuery(name = "Personel.findByBirimAdi", query = "SELECT p FROM Personel p WHERE p.birimAdi = :birimAdi")})
 public class Personel implements Serializable {
     private static final long serialVersionUID = 1L;
     @Id
@@ -43,6 +44,8 @@ public class Personel implements Serializable {
     private Integer maas;
     @Column(name = "UNVANNO")
     private Integer unvanno;
+    @Column(name = "BIRIM_ADI")
+    private String birimAdi;
 
     public Personel() {
     }
@@ -89,6 +92,14 @@ public class Personel implements Serializable {
 
     public void setUnvanno(Integer unvanno) {
         this.unvanno = unvanno;
+    }
+
+    public String getBirimAdi() {
+        return birimAdi;
+    }
+
+    public void setBirimAdi(String birimAdi) {
+        this.birimAdi = birimAdi;
     }
 
     @Override
