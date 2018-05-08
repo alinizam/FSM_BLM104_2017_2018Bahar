@@ -8,6 +8,7 @@
     <class>Ders12Lab.PersonelTelefon</class>
     <class>Ders12Lab.Telefon</class>
     <class>Ders12Lab.Birim</class>
+    <class>Ders13Lab.Calisan</class>
     <properties>
       <property name="javax.persistence.jdbc.url" value="jdbc:derby://localhost:1527/sample"/>
       <property name="javax.persistence.jdbc.user" value="app"/>
